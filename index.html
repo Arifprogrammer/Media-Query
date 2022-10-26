@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        section{
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            /* flex-wrap: wrap; */
+        }
+        .food{
+            height: 600px;
+            /* width: 100%; */
+            margin-left: 5px;
+            border: 2px solid rgb(99, 14, 39);
+            border-radius: 15px;
+            background-color: aquamarine;
+        }
+        .food>img{
+            width: 100%;
+            height: 55%;
+            border-radius: 10px;
+        }
+        .food>p{
+            padding: 2px 5px;
+            margin: 0px;
+        }
+        @media (max-width: 1350px) {
+            section{
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .food{
+                margin-bottom: 10px;
+                background-color: rgb(7, 253, 253);
+            }
+            .food>img{
+                height: 65%;
+            }
+        }
+        @media (max-width: 860px) {
+            .food{
+                background-color: rgb(7, 204, 253);
+                margin-top: 10px;
+            }
+            section{
+                grid-template-columns: repeat(3, 1fr);
+                background-color: gray;
+            }
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+        @media (max-width: 560px) {
+            .food{
+                background-color: rgb(10, 67, 82);
+                margin: 10px 5px 0px 5px;
+                border: 1px solid transparent;
+            }
+            .food>p{
+                color: aliceblue;
+            }
+            section{
+                /* display: grid; */
+                grid-template-columns: repeat(2, 1fr);
+                background-color: gray;
+            }
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat laboriosam voluptas corrupti delectus error, maiores minus vitae, culpa non eaque magnam excepturi et libero, animi nam nobis. Maxime, temporibus!</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Maxime ullam quia ipsa iusto nihil obcaecati a reprehenderit facere, ea vel animi dolor veniam non ab, aspernatur doloribus sit aperiam voluptates possimus temporibus fugit, commodi consequatur aut officia? Adipisci?</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Labore velit necessitatibus maxime deserunt, quas ipsam exercitationem aspernatur natus harum ab consectetur, aperiam modi cupiditate eius praesentium adipisci vel iusto quaerat obcaecati libero doloribus qui nostrum! Aliquid, aut pariatur.</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Pariatur perspiciatis eligendi facere cumque quaerat aut accusantium dolor at, alias repudiandae beatae excepturi commodi dolorum enim dignissimos autem hic magnam corrupti molestias eos! Dolorum eum placeat consequatur facilis reprehenderit?</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>In dolor non vero rem pariatur, soluta saepe error dolores inventore delectus quisquam necessitatibus hic consectetur minus similique praesentium eos incidunt architecto a? Dicta dolorem soluta est! Magnam, sit facilis?</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Ullam, minus possimus! Debitis architecto unde tenetur quia labore eum harum ipsam illum ipsa. Sed, dolores. Minima id atque quo debitis in ullam quaerat, excepturi aliquid? Quisquam doloremque id magni.</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Nostrum iste possimus pariatur, cupiditate molestiae reiciendis ut numquam aperiam praesentium expedita veniam consequatur eum voluptates tempora quas. Magni iure qui quasi adipisci aut. Consequuntur doloribus sed fugiat fuga est.</p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Totam, magni tempora perferendis modi dolore non maiores distinctio minima impedit asperiores veritatis quod libero, adipisci rerum ea hic voluptatibus omnis eius illo natus iusto quae! Quam amet error nulla.</p>
+        </div>
+    </section>
+</body>
+</html>
